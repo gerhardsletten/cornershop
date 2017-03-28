@@ -31,7 +31,7 @@ Shop.prototype.addItem = function(item){
 	var hit = null;
 
 	this.items.forEach(function(i){
-		if((i.name==item.name || i.id==item.id) && !hit){
+		if((i.name==item.name && i.id==item.id) && !hit){
 			hit = true;
 			i.qty += item.qty;
 		}
